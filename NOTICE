@@ -1,0 +1,41 @@
+braidyn-bc-trajectory-analysis
+Copyright (c) 2026 University of Fukui
+Written by Jigen Koike and Takahiro Yamauchi.
+
+The code is under the MIT licence; see LICENSE.
+
+This repository also carries data, under two different terms.
+
+
+data/paper/ — CC-BY-4.0
+-----------------------
+
+Everything under data/paper/ except AllenCCF_masks.h5 is derived from the
+BraiDyn-BC dataset by the pipeline in scripts/, and is released under the
+Creative Commons Attribution 4.0 International licence:
+
+    https://creativecommons.org/licenses/by/4.0/
+
+The dataset it derives from is the public BraiDyn-BC release:
+
+    https://github.com/BraiDyn-BC
+
+Please cite that project as it asks, alongside the paper this repository
+accompanies.
+
+
+data/paper/AllenCCF_masks.h5 — MIT, (c) Keisuke Sehara
+------------------------------------------------------
+
+The Allen CCF region masks used to draw the cortical maps in Figure 1 are
+redistributed unmodified from:
+
+    https://github.com/BraiDyn-BC/bdbc-nwb-explorer
+    file:    bdbc_nwb_explorer/data/AllenCCF_masks.h5
+    commit:  30e2e45
+    size:    173,412 bytes
+    blob:    8186a296a930ad478f4b3ea05b0cdcc52aee050f
+
+That project is MIT licensed, Copyright (c) Keisuke Sehara, and its licence
+terms travel with the file. The copy here was checked against the upstream
+one by git blob hash.

@@ -1,0 +1,54 @@
+[project]
+name = "braidyn-bc-trajectory-analysis"
+version = "0.1.0"
+description = "Analysis pipeline for BraiDyn-BC NWB data."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "pynwb",
+    "numpy",
+    "pandas",
+    "pyarrow",        # for Parquet I/O via pandas
+    "scipy",
+    "scikit-learn",
+    "joblib",           # imported directly by run_pairwise_pca
+    "statsmodels",     # mixed-effects models (MixedLM)
+    "h5py",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyterlab",
+    "jupytext",
+    "nbstripout",
+    "ipywidgets",
+]
+dev = [
+    "pytest",
+    "ruff",
+    "mypy",
+]
+server = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/braidyn_io", "src/analysis", "src/figures"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint.per-file-ignores]
+# A notebook puts its imports in the cell after the one that places src/ on
+# the path, which is the only order that works when it is run as a notebook.
+# E402 is about a file read top to bottom, which a notebook is not. Both
+# halves of the pair need naming: ruff reads .ipynb as well as .py.
+"notebooks/**/*.py" = ["E402"]
+"notebooks/**/*.ipynb" = ["E402", "E701", "E401", "F541"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

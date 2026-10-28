@@ -1,0 +1,51 @@
+{
+  "n_sessions_in_fit": 364,
+  "n_mice_in_fit": 25,
+  "mice": [
+    "VG1-GC#105",
+    "VG1-GC#109",
+    "VG1-GC#116",
+    "VG1-GC#117",
+    "VG1-GC#119",
+    "VG1-GC#122",
+    "VG1-GC#124",
+    "VG1-GC#125",
+    "VG1-GC#127",
+    "VG1-GC#129",
+    "VG1-GC#130",
+    "VG1-GC#48",
+    "VG1-GC#51",
+    "VG1-GC#52",
+    "VG1-GC#53",
+    "VG1-GC#54",
+    "VG1-GC#60",
+    "VG1-GC#61",
+    "VG1-GC#63",
+    "VG1-GC#66",
+    "VG1-GC#73",
+    "VG1-GC#78",
+    "VG1-GC#85",
+    "VG1-GC#87",
+    "VG1-GC#99"
+  ],
+  "outcomes_used_in_fit": [
+    "success",
+    "failure",
+    "miss"
+  ],
+  "peth_weighting": "trial-mean (option a) — union across outcomes, weighted by trial count",
+  "n_roi": 44,
+  "pretrigger_frames": 30,
+  "posttrigger_frames": 120,
+  "frame_rate": 30.0,
+  "n_pc_distance": 3,
+  "min_trials_per_condition_for_pair": 3,
+  "pairs_computed": [
+    "success-miss",
+    "success-failure",
+    "failure-miss"
+  ],
+  "derived_root": "data/derived",
+  "script": "scripts/run_pairwise_pca.py",
+  "generated_at": "2026-07-10 19:14:44"
+}

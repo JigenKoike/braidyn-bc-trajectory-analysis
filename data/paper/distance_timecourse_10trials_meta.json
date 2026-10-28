@@ -1,0 +1,18 @@
+{
+  "script": "scripts/run_trial_subsampling.py",
+  "projections": "output/pca_pairwise/trial_projections",
+  "n_trials_per_outcome": 10,
+  "n_draws": 10,
+  "seed": 20261023,
+  "n_pc": 3,
+  "sessions_per_pair": {
+    "success-miss": 287,
+    "failure-miss": 168,
+    "success-failure": 219
+  },
+  "sessions_too_few_trials_per_pair": {
+    "failure-miss": 152,
+    "success-failure": 109,
+    "success-miss": 67
+  }
+}

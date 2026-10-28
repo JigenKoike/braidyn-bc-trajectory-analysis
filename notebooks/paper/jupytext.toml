@@ -1,0 +1,7 @@
+# Every notebook in this directory is paired with a py:percent script of the
+# same name. Edit either one; `jupytext --sync <file>` brings the other up to
+# date, and Jupyter does it on save once jupytext is installed in the kernel.
+#
+# The .ipynb is what you run and what carries the figures; the .py is what git
+# can show a readable diff of, and what survives if a notebook is ever lost.
+formats = "ipynb,py:percent"

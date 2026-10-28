@@ -1,0 +1,71 @@
+{
+  "built_by": "scripts/build_paper_dataset.py",
+  "built_at": "2026-10-23T13:14:46+0900",
+  "n_task_sessions": 364,
+  "files": {
+    "AllenCCF_masks.h5": {
+      "bytes": 173412,
+      "sha256": "a12e6520ffae42ad9edd68e55e1056d3396423fc0c192a9cacb0ea68ca5f1866"
+    },
+    "baseline_F_per_session.csv": {
+      "bytes": 41805,
+      "sha256": "9ede07400fb43244b198dc683f3ad45c905564823ef67ec97f8ca1f139f6688a"
+    },
+    "distance_timecourse.csv": {
+      "bytes": 16262095,
+      "sha256": "5ad663b6ba11f36a6c5174af30996aafbe131ca9f6799c3b1f2b30a89d2d03ef"
+    },
+    "distance_timecourse_10trials.csv": {
+      "bytes": 12605535,
+      "sha256": "fa0cd7ec1eee8fa6712aea763efd145b34395bcd98cfcd7f0fa1ec6e46d52fa3"
+    },
+    "distance_timecourse_10trials_meta.json": {
+      "bytes": 417,
+      "sha256": "4b6a484d1105b7bb7fc65a31e7f8513bd8790d613ee6f5ec14b979c1999a60d8"
+    },
+    "pca/global_grand_mean_roi_time.npy": {
+      "bytes": 26704,
+      "sha256": "e01c7a758ad7ea55cb512ace75e80b197f9ab6ba85eb815fc180528e6944a7d2"
+    },
+    "pca/meta.json": {
+      "bytes": 1039,
+      "sha256": "fa3186197344d5ef97b6d5ecb7e2175747ee4a98660d4f92de3be88c70c30b46"
+    },
+    "pca/pca_components.npy": {
+      "bytes": 24288,
+      "sha256": "eed0d6355a7c7d8812adc0ef34f5988422107ba35ec17848ac8d60b6cbe4fe3e"
+    },
+    "pca/pca_explained_variance_ratio.npy": {
+      "bytes": 288,
+      "sha256": "935b68ad05b61a0e567df16493d5fa91eb66a770b3377cd19c5a8f8f7390ff04"
+    },
+    "pca/peth_time_axis_sec.npy": {
+      "bytes": 732,
+      "sha256": "df9fc81d8f1984151ded7bc71118b2b8c221519dc0183faf1a4e19e197253b4c"
+    },
+    "pca/roi_names.txt": {
+      "bytes": 335,
+      "sha256": "f27ee3f6570751086839d21b39b819e8c3f3dae8663bb39cfd44b576796faf30"
+    },
+    "pca/roi_weights.npy": {
+      "bytes": 3648,
+      "sha256": "9eae1bdfcb716ecd6abd756741c8bcb6bb58c35aa408e945bd9bb50d4d574bc8"
+    },
+    "projected_sessions.csv": {
+      "bytes": 30683,
+      "sha256": "b6b1a71822a37c73d53540105ad3f97a551443e2ea31b2579fb355df4a8df5e4"
+    },
+    "pull_duration.parquet": {
+      "bytes": 143126,
+      "sha256": "7e5c856cb896cc4f179693fce96827df980beefc7c9917fb92d4a5e62eea2219"
+    },
+    "trajectories.npz": {
+      "bytes": 12475191,
+      "sha256": "19f2c8339ffb8e03cb3f6ac3c2d8a61d8640d991a9b0c66e4179acb0b2960aa0"
+    },
+    "trials.parquet": {
+      "bytes": 1104713,
+      "sha256": "acef77ec4508abbdd29670ae32ff1804a53c2c0f2a4b2c33c193ff8e3d920768"
+    }
+  }
+}
