@@ -19,7 +19,7 @@ clone and a minute rather than a download and two days.
 ## Redrawing the figures
 
 ```bash
-git clone <repository url>
+git clone https://github.com/JigenKoike/braidyn-bc-trajectory-analysis.git
 cd braidyn-bc-trajectory-analysis
 
 curl -LsSf https://astral.sh/uv/install.sh | sh    # if you do not have uv
