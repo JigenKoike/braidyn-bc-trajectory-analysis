@@ -14,7 +14,7 @@ The data is the public [BraiDyn-BC](https://github.com/BraiDyn-BC) release,
 about 6.4 TB of NWB files across 495 sessions; the analysis uses the 364
 task sessions among them. This repository
 carries the 43 MB those figures actually need, so that redrawing them is a
-clone and a minute rather than a download and two days.
+clone and a few minutes rather than a download and two days.
 
 ## Redrawing the figures
 
@@ -33,7 +33,7 @@ done
 ```
 
 `uv` fetches Python 3.11 and every dependency; nothing else is needed. The
-five notebooks take **about a minute** together on a laptop and write to
+five notebooks take **about two minutes** together and write to
 `output/paper_figures/`. They read `data/paper/`, which is in this
 repository, and nothing else.
 
