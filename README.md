@@ -1,7 +1,8 @@
 # braidyn-bc-trajectory-analysis
 
-Code and data for the figures and tables of *<paper title>* (<authors>,
-<journal>, <year>).
+Code and data for the figures and tables of *Tracking outcome-specific
+cortex-wide neural trajectories in mice across training days using a common
+low-dimensional space* (Yamauchi et al., in preparation).
 
 The question is whether the cortical response to a trial separates by its
 outcome — success, failure, or no response at all — and whether that
@@ -10,11 +11,11 @@ over 364 training sessions is reduced to one shared PC space; the distance
 between two outcomes inside that space is the measure everything else is
 built on.
 
-The data is the public [BraiDyn-BC](https://github.com/BraiDyn-BC) release,
-about 6.4 TB of NWB files across 495 sessions; the analysis uses the 364
-task sessions among them. This repository
-carries the 43 MB those figures actually need, so that redrawing them is a
-clone and a few minutes rather than a download and two days.
+The data is the public [BraiDyn-BC](https://github.com/BraiDyn-BC) release
+(Kondo et al., 2025), about 6.4 TB of NWB files across 495 sessions; the
+analysis uses the 364 task sessions among them. This repository carries the
+43 MB those figures actually need, so that redrawing them is a clone and a
+few minutes rather than a download and two days.
 
 ## Redrawing the figures
 
@@ -64,9 +65,7 @@ Every figure is written as PNG, PDF and SVG at 300 dpi. The SVG keeps its
 text as text, so a label can be moved in a vector editor without going back
 to the notebook.
 
-Each notebook also prints the numbers quoted in the manuscript, and checks
-itself: Figures 3 and 4 compare their fits against the earlier run's CSVs
-and stop if anything has moved.
+Each notebook also prints the numbers quoted in the manuscript.
 
 ## Rebuilding the data from the raw files
 
@@ -157,6 +156,13 @@ Uncorrected p values are printed beside the corrected ones wherever both fit.
 - **`data/paper/AllenCCF_masks.h5`** — Allen CCF ROI masks, from
   [BraiDyn-BC/bdbc-nwb-explorer](https://github.com/BraiDyn-BC/bdbc-nwb-explorer)
   (MIT, © Keisuke Sehara). See `NOTICE`.
-- **The raw data** is the BraiDyn-BC release; cite it as that project asks.
+- **The raw data** is the BraiDyn-BC release, described in Kondo, M., Sehara,
+  K., Harukuni, R., Aoki, R., Sugimoto, S., Tanaka, Y. R., et al. (2025).
+  Multimodal dataset linking wide-field calcium imaging to behavior changes in
+  operant lever-pull task in mice. *Scientific Data* 12, 1264.
+  https://doi.org/10.1038/s41597-025-05482-y. The NWB files are deposited at
+  G-Node: https://doi.org/10.12751/g-node.zbh16l (CC-BY-4.0). The download
+  script (step 1 above) reads the NWB files from BraiDyn-BC's public S3
+  bucket.
 
 If you use this code or the packaged data, please cite the paper above.

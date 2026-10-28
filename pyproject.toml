@@ -1,7 +1,7 @@
 [project]
 name = "braidyn-bc-trajectory-analysis"
 version = "0.1.0"
-description = "Analysis pipeline for BraiDyn-BC NWB data."
+description = "Code and data for \"Tracking outcome-specific cortex-wide neural trajectories in mice across training days using a common low-dimensional space\""
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
